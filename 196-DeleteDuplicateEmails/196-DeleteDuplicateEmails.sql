@@ -1,0 +1,5 @@
+-- Last updated: 09/09/2025, 14:19:37
+DELETE p1
+FROM Person p1
+JOIN Person p2
+ON p1.email = p2.email AND p1.id > p2.id;
