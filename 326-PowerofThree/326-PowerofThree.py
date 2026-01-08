@@ -1,4 +1,4 @@
-# Last updated: 08/01/2026, 22:27:15
+# Last updated: 08/01/2026, 22:33:01
 1class Solution(object):
 2    def isPowerOfThree(self, n):
 3        if n <= 0:
