@@ -1,5 +1,8 @@
-# Last updated: 13/09/2025, 21:27:44
-class Solution(object):
-    def isPalindrome(self, s):
-        cleaned = "".join(ch.lower() for ch in s if ch.isalnum())
-        return cleaned == cleaned[::-1]
+# Last updated: 10/06/2026, 13:11:56
+1class Solution(object):
+2    def isPalindrome(self, s):
+3        new = ""
+4        for ch in s:
+5            if ch.isalnum():
+6                new += ch.lower()
+7        return new == new[::-1]
