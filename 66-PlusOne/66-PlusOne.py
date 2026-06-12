@@ -1,14 +1,12 @@
-# Last updated: 09/09/2025, 14:20:20
-class Solution(object):
-    def plusOne(self, digits):
-        """
-        :type digits: List[int]
-        :rtype: List[int]
-        """
-        n = len(digits)
-        for i in range(n - 1, -1, -1):
-            if digits[i] < 9:
-                digits[i] += 1
-                return digits
-            digits[i] = 0  
-        return [1] + [0] * n
+# Last updated: 12/06/2026, 21:56:07
+1class Solution(object):
+2    def plusOne(self, digits):
+3        n = len(digits)
+4        for i in range(n - 1, -1, -1):
+5            if digits[i] < 9:   
+6                digits[i] += 1
+7                return digits
+8            else:               
+9                digits[i] = 0
+10        return [1] + digits
+11
