@@ -1,4 +1,4 @@
-# Last updated: 13/06/2026, 22:31:13
+# Last updated: 13/06/2026, 22:34:53
 1class Solution(object):
 2    def arraySign(self, nums):
 3        """
