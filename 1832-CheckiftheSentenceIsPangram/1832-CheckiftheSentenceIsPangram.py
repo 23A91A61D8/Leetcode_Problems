@@ -1,4 +1,4 @@
-# Last updated: 18/06/2026, 21:48:52
+# Last updated: 19/06/2026, 22:22:59
 1class Solution(object):
 2    def checkIfPangram(self, sentence):
 3        """
