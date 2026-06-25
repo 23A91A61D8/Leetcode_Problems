@@ -1,24 +1,12 @@
-# Last updated: 09/09/2025, 14:20:15
-class Solution(object):
-    def addBinary(self, a, b):
-        """
-        :type a: str
-        :type b: str
-        :rtype: str
-        """
-        i, j = len(a) - 1, len(b) - 1  
-        carry = 0
-        result = []
-
-        while i >= 0 or j >= 0 or carry:
-            total = carry
-            if i >= 0:
-                total += int(a[i])
-                i -= 1
-            if j >= 0:
-                total += int(b[j])
-                j -= 1
-        
-            result.append(str(total % 2))
-            carry = total // 2
-        return "".join(reversed(result))
+# Last updated: 25/06/2026, 15:52:27
+1class Solution(object):
+2    def addBinary(self, a, b):
+3        """
+4        :type a: str
+5        :type b: str
+6        :rtype: str
+7        """
+8        a = int(a,2)
+9        b = int(b,2)
+10        result = a+b
+11        return bin(result)[2:]
