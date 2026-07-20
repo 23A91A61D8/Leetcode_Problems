@@ -1,22 +1,17 @@
-# Last updated: 10/06/2026, 12:59:28
+# Last updated: 20/07/2026, 21:32:13
 1class Solution(object):
 2    def shiftGrid(self, grid, k):
-3
-4        m = len(grid)
-5        n = len(grid[0])
-6
-7        nums = []
-8
-9        for row in grid:
-10            nums.extend(row)
-11
-12        k = k % (m * n)
-13
-14        nums = nums[-k:] + nums[:-k]
-15
-16        result = []
-17
-18        for i in range(0, len(nums), n):
-19            result.append(nums[i:i+n])
-20
-21        return result
+3        m, n = len(grid), len(grid[0])
+4        total = m * n
+5        flat = []
+6        for row in grid:
+7            flat.extend(row)
+8        k = k % total
+9        if k == 0:
+10            return grid
+11        flat = flat[-k:] + flat[:-k]
+12        new_grid = []
+13        for i in range(m):
+14            new_grid.append(flat[i*n:(i+1)*n])
+15        return new_grid
+16
