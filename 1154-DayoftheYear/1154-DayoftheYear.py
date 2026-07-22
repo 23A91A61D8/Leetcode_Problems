@@ -1,4 +1,4 @@
-# Last updated: 19/07/2026, 21:19:14
+# Last updated: 22/07/2026, 22:36:25
 1class Solution(object):
 2    def dayOfYear(self, date):
 3        year, month, day = map(int, date.split('-'))
