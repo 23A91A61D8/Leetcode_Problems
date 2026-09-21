@@ -1,4 +1,4 @@
-# Last updated: 19/09/2026, 10:15:50
+# Last updated: 21/09/2026, 21:11:19
 1class Solution(object):
 2    def findPeakElement(self, nums):
 3        """
