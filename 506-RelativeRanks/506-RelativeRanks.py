@@ -1,4 +1,4 @@
-# Last updated: 25/09/2026, 21:12:27
+# Last updated: 25/09/2026, 21:13:07
 1class Solution(object):
 2    def findRelativeRanks(self, score):
 3        sorted_score = sorted(score, reverse=True)
