@@ -1,4 +1,4 @@
-# Last updated: 16/10/2026, 20:48:36
+# Last updated: 16/10/2026, 20:48:44
 1class Solution(object):
 2    def arrayPairSum(self, nums):
 3        """
