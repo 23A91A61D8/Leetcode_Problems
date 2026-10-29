@@ -1,4 +1,4 @@
-# Last updated: 29/10/2026, 21:15:59
+# Last updated: 29/10/2026, 21:16:55
 1
 2class Solution(object):
 3    def isSubsequence(self, s, t):
